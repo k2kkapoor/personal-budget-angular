@@ -3,9 +3,10 @@
     <li><a routerLink="/">Home</a></li>
     <li><a routerLink="/about">About</a></li>
     <li><a routerLink="/login">Login</a></li>
-
-    <!-- This is an SEO Change : rel provides relation of the link to the current website -->
-    <li><a routerLink="https://google.com" rel="nofollow">Google</a></li>
+    <!-- 4. Create a new component and call it "contact". It can have any content and CSS that you want.
+Once you create the contact component, go to the Router module and add a new path, so if people access '/contact' they will be served this newly created "contact" component
+Also, add a new link to the "menu" component template (and name it "Contact"), so when people click that link they will access the router that will lead them to the Contact page  -->
+    <li><a routerLink="/contact">Contact</a></li>
 
     <li>
       <!-- This is an A11y Change : This link helps to navigate to the main content of the page -->
@@ -13,23 +14,5 @@
     </li>
 
     <!-- This is an A11y Change : This link helps to change page font size-->
-    <li>
-      <a
-        href="#"
-        id="font-increase"
-        value="larger"
-        onclick="changeFontSize(this)"
-        >Font +</a
-      >
-    </li>
-    <li>
-      <a
-        href="#"
-        id="font-decrease"
-        value="larger"
-        onclick="changeFontSize(this)"
-        >Font -</a
-      >
-    </li>
   </ul>
 </nav>

@@ -1,4 +1,7 @@
 <main id="main" class="container center">
+  <!-- 3.Create a new component called "breadcrumbs". You can add any content and CSS that you want to this new component. But now that you created the breadcrumbs component, please add it as the first child of the "main" tag that is inside the homepage component template. -->
+  <pb-breadcrumbs></pb-breadcrumbs>
+
   <pb-article>
     <h2>Stay on track</h2>
     <slot-two
@@ -50,25 +53,7 @@
     >
   </pb-article>
 
-  <article class="charts">
-    <h2>ChartJS</h2>
-    <p>
-      <canvas class="chartjsClass" id="myChart"></canvas>
-    </p>
-  </article>
-
-  <!-- <pb-article>
-    <h2>ChartJS</h2>
-    <slot-two>ChartJs chart go here</slot-two>
-  </pb-article> -->
-
-  <pb-article>
-    <h2>D3JS Chart</h2>
-    <slot-two>D3JS Chart goes here</slot-two>
-  </pb-article>
-
-  <!-- <div>
-    <h2>D3JS Chart</h2>
-    <div id="d3jsChart" width="500" height="400"></div>
-  </div> -->
+  <!-- 5. Make sure that your D3JS chart works with the Angular-way of doing things
+You might need to google "Angular D3JS" to see how to use D3JS inside Angular -->
+  <pb-charts></pb-charts>
 </main>
